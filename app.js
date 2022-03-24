@@ -2,7 +2,7 @@ const activity = document.querySelector(".activity");
 const button = document.querySelector(".generate-btn");
 
 async function getActivity() {
-  const dataFetch = await fetch("http://www.boredapi.com/api/activity/", {
+  const dataFetch = await fetch("https://www.boredapi.com/api/activity/", {
     method: "GET",
     headers: { Accept: "application/json" },
   });
