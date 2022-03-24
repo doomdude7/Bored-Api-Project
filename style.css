@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+  font-family: "Red Hat Mono", monospace;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav button {
+  display: none;
+}
+.container {
+  background-image: url(./images/pexels-m-venter-1659438.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.bored-container {
+  background-image: url(./images/thought_bubble.svg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40vw;
+  /* background-size: cover; */
+  /* border: 0.5rem outset rgb(125, 77, 214);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem; */
+  display: flex;
+  height: 70vh;
+  width: 45vw;
+  top: 15%;
+  left: 35%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.activity-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.activity {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 33.5vh;
+}
+.activity .title {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.activity-msg {
+  display: block;
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 0.5rem;
+  text-shadow: 4px 4px 8px #750eaa;
+  font-family: "Merriweather", serif;
+}
+.generate-btn {
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 90%;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  background: #750eaa;
+  z-index: 2;
+}
+h3 a {
+  margin-top: 0.5rem;
+  display: block;
+  text-decoration: none;
+  text-shadow: 4px 4px 8px #750eaa;
+  cursor: pointer;
+  color: white;
+}
+/* .svg-container {
+  position: absolute;
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  top: 34vh;
+  left: 35vw;
+  opacity: 1;
+}
+svg {
+  transform: scale(1.3);
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  opacity: 0.9;
+} */
+
+@media screen and (max-width: 1330px) {
+  .bored-container {
+    background-size: 50vw;
+    width: 50vw;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .bored-container {
+    background-size: 55vw;
+    width: 55vw;
+    left: 35%;
+    top: 18%;
+  }
+}
+@media screen and (max-width: 905px) {
+  .activity .title {
+    position: absolute;
+    top: -5vh;
+    left: 7vw;
+  }
+  .bored-container {
+    background-size: 60vw;
+    width: 60vw;
+    left: 31%;
+    top: 22%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .activity .title {
+    top: 0vh;
+    left: 5vw;
+  }
+  .bored-container {
+    background-size: 70vw;
+    width: 70vw;
+    top: 13%;
+    left: 30%;
+  }
+  .generate-btn {
+    top: 90%;
+    left: 18vw;
+  }
+  .activity-msg {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .container {
+    min-height: 260vh;
+  }
+}
+@media screen and (max-width: 606px) {
+  .bored-container {
+    background-size: 75vw;
+    width: 75vw;
+    left: 20%;
+  }
+  .activity .title {
+    left: 10vw;
+  }
+  .generate-btn {
+    left: 25vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bored-container {
+    background-size: 85vw;
+    width: 85vw;
+    top: 16%;
+    left: 15%;
+  }
+  .activity .title {
+    left: 12vw;
+  }
+}
+@media screen and (max-width: 447px) {
+  .bored-container {
+    top: 20%;
+  }
+  .activity .title {
+    left: 6vw;
+  }
+}
+
+@media screen and (max-width: 407px) {
+  .bored-container {
+    top: 22%;
+  }
+  .activity .title {
+    left: 2vw;
+  }
+}
